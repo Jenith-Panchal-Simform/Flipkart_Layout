@@ -14,6 +14,7 @@
     --spacing-md: 1.5rem; 
     --spacing-lg: 2rem; 
     --spacing-xl: 2.5rem;
+    --spacing-2xl:5rem;
 
     /* fontsizes */
     --size-1--font-size-xs: 0.75rem; 
@@ -32,7 +33,11 @@
 a{
     text-decoration: none;
 }
-
+.img{
+    height: 100%;
+    width: 100%;
+ }
+ 
 .secondary-btn{
     padding: var(--spacing-xs) var(--spacing-md);
     color: var(--primary-color);
@@ -40,6 +45,8 @@ a{
 }
 
 /* header styles */
+
+/* navigation styles */
 
 .header__nav{
     background-color: var(--primary-color);
@@ -52,46 +59,67 @@ a{
             display: flex;
             justify-content: flex-start;
             gap:var(--spacing-sm);
-            .header__nav-figure{
-                flex-shrink:0 ;
-                img{
-                    height: 100%;
-                    width: 100%;
+                .header__nav-figure{
+                    flex-shrink:0 ;
+                    
                 }
-            }
-            .header__search{
-                display: flex; 
-                width:40rem;
-                background-color: var(--color-white);
-                & input{
-                    padding: 0 0 0 var(--spacing-xs);
-                    width: 100%;
-                    border: none;
-                    outline: none;
-                    background: none;
+                .header__search{
+                    display: flex; 
+                    width:40rem;
+                    background-color: var(--color-white);
+                    & input{
+                        padding: 0 0 0 var(--spacing-xs);
+                        width: 100%;
+                        border: none;
+                        outline: none;
+                        background: none;
+                    }
+                    
+                    & button{
+                        background: none;
+                        border: none;
+                        padding: 0 var(--spacing-xs);
+                        color: var(--primary-color);
+                        font-size: var(--font-size-md);
+                    }
                 }
-                & button{
-                    background: none;
-                    border: none;
-                    padding: 0 var(--spacing-xs);
-                    color: var(--primary-color);
-                    font-size: var(--font-size-md);
-                }
-            }
-    }
-    .header__nav-right{
+        }
 
+    .header__nav-right{
         display: flex;
         gap: var(--spacing-sm);
-        .header__list{
-            list-style-type: none ;
-            display: flex;
-            gap: var(--spacing-sm);
-            align-items: center;
-            li a {
-                font-size: var(--font-size-large);
-                color: var(--color-white);
-            }
+
+            .header__list{
+                list-style-type: none ;
+                display: flex;
+                gap: var(--spacing-sm);
+                align-items: center;
+                    li a {
+                        font-size: var(--font-size-large);
+                        color: var(--color-white);
+                    }
         }
     }
 }
+
+/* catrgorical navigation styles */
+.header__categories{
+    display: flex;
+    gap:var(--spacing-sm);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-sm);
+     box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.2);
+        .category{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--spacing-xs);
+            .category__figure{
+                                height: var(--spacing-2xl);
+                                width: var(--spacing-2xl);
+                            }
+        }
+}
+
