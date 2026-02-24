@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:#2874F0;
+    --color-white:#FFF;
+
+    /* spacings */
+    --spacing-xs: 0.5rem; 
+    --spacing-sm: 1rem; 
+    --spacing-md: 1.5rem; 
+    --spacing-lg: 2rem; 
+    --spacing-xl: 2.5rem;
+
+    /* fontsizes */
+    --size-1--font-size-xs: 0.75rem; 
+    --font-size-sm: 0.875rem; 
+    --font-size-md: 1rem; 
+    --font-size-lg: 1.25rem; 
+    --font-size-xl: 1.5rem; 
+    --font-size-2xl: 2rem;
+    --font-size-3xl: 2.5rem;
+}
+
+.figure{
+    height:var(--spacing-xl);
+}
+
+a{
+    text-decoration: none;
+}
+
+.secondary-btn{
+    padding: var(--spacing-xs) var(--spacing-md);
+    color: var(--primary-color);
+    font-size: var(--font-size-sm);
+}
+
+/* header styles */
+
+.header__nav{
+    background-color: var(--primary-color);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: var(--spacing-sm);
+        .header__nav-left{
+            display: flex;
+            justify-content: flex-start;
+            gap:var(--spacing-sm);
+            .header__nav-figure{
+                flex-shrink:0 ;
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            .header__search{
+                display: flex; 
+                width:40rem;
+                background-color: var(--color-white);
+                & input{
+                    padding: 0 0 0 var(--spacing-xs);
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    background: none;
+                }
+                & button{
+                    background: none;
+                    border: none;
+                    padding: 0 var(--spacing-xs);
+                    color: var(--primary-color);
+                    font-size: var(--font-size-md);
+                }
+            }
+    }
+    .header__nav-right{
+
+        display: flex;
+        gap: var(--spacing-sm);
+        .header__list{
+            list-style-type: none ;
+            display: flex;
+            gap: var(--spacing-sm);
+            align-items: center;
+            li a {
+                font-size: var(--font-size-large);
+                color: var(--color-white);
+            }
+        }
+    }
+}
