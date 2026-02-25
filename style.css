@@ -165,7 +165,7 @@ a {
   container-type: inline-size;
 }
 .main__top {
-  background-color: var(--color-white);
+  
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -181,12 +181,12 @@ a {
     }
 }
 .main__bottom {
-  background-color: var(--color-white);
   margin: 0 0 var(--spacing-xl) 0;
 }
 
 .main__top-deals,
 .main__bottom-deals {
+    background-color: var(--color-white);
   position: relative;
   overflow-x: auto;
   padding: var(--spacing-lg) 0;
