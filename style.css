@@ -161,6 +161,8 @@ a {
   max-width: min(1400px, 80vw);
   width: 100%;
   margin: var(--spacing-md) auto;
+  container-name:main ;
+  container-type: inline-size;
 }
 .main__top {
   background-color: var(--color-white);
@@ -223,4 +225,19 @@ a {
     }
 }
 
-@media screen @ 
+@container main (width<600px)
+{
+    .main__top{
+        flex-direction: column;
+        .main__top-deals{
+            margin-top: var(--spacing-lg);
+            width:100%;
+            
+            order:2;
+        }
+        .main__promotion{
+            order:1;
+        }
+    }
+
+} 
