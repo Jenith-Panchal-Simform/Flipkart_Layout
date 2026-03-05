@@ -199,9 +199,10 @@ a {
 
 .main__top-deals,
 .main__bottom-deals {
-    background-color: var(--color-white);
+  background-color: var(--color-white);
   position: relative;
   overflow-x: auto;
+  width: 100%;
   padding: var(--spacing-sm) 0;
   box-shadow: 0 7px 8px rgba(0, 0, 0, 0.3);
     .item__scroll--next
@@ -238,16 +239,39 @@ a {
         scrollbar-width: none;
         
         .category__item {
+          a{
+            text-decoration: none;
+            color:black;
+          }
         display: flex;
         flex-direction: column;
+        /* border:1px solid red; */
         /* align-items: center; */
             .item {
                 height: var(--spacing-3xl);
                 width: var(--spacing-3xl);
 
             }   
+            .item__detail{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap:var(--spacing-xs);
+            }
+            .item__detail p:nth-child(2)
+            {
+              color: var(--color-green);
+            }
+             .item__detail p:nth-child(3)
+            {
+              color: var(--color--gray);
+            }
+
         
         }
+        .category__item:focus {
+          outline: 2px solid blue;
+          }
     }
 }
 
