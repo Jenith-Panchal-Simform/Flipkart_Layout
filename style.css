@@ -202,7 +202,7 @@ a {
     background-color: var(--color-white);
   position: relative;
   overflow-x: auto;
-  padding: var(--spacing-lg) 0;
+  padding: var(--spacing-sm) 0;
   box-shadow: 0 7px 8px rgba(0, 0, 0, 0.3);
     .item__scroll--next
             {
@@ -220,6 +220,17 @@ a {
         justify-content: space-between;
         padding: var(--spacing-sm);
         align-items: center;
+        .heading__left{
+          display: flex;
+          align-items:center;
+          gap:var(--spacing-sm);
+            .heading__left-timer{
+              color:var(--color--gray);
+              display: flex;
+              align-items: center;
+              gap:var(--spacing-xs);
+            }
+        }
     }
     .category__items {
         display: flex;
