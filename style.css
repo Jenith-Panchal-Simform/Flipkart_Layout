@@ -129,6 +129,9 @@ a {
     }
   }
 }
+.header__hamburger{
+  display: none;
+}
 /* categorical navigation styles */
 .header__categories {
   background-color: var(--color-white);
@@ -144,12 +147,14 @@ a {
     justify-content: space-around;
     align-items: center; 
     overflow-x: auto;
+    list-style-type:none;
     .category {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-
+      color:black;
+      text-decoration: none;
       .category__figure {
         height: var(--spacing-2xl);
         width: var(--spacing-2xl);
@@ -289,5 +294,4 @@ a {
             order:1;
         }
     }
-
 } 
