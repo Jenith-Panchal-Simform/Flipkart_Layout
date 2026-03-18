@@ -1,0 +1,732 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Jenith" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a Flipkart Layout conatining a only design using HTML and CSS"
+    />
+    <!-- external css link -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- open graph links -->
+    <meta
+      property="og:url"
+      content="https://jenith-panchal-simform.github.io/Flipkart_Layout/"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Flipkart" />
+    <meta
+      property="og:description"
+      content="Flipkart-inspired responsive layout built with HTML and CSS, featuring a wide search bar and clean design."
+    />
+    <meta
+      property="og:image"
+      content="https://static.vecteezy.com/system/resources/previews/056/850/881/non_2x/flipkart-app-icon-on-transparent-background-free-png.png"
+    />
+    <title>Flipkart</title>
+  </head>
+
+  <!-- main container -->
+  <body class="container">
+    <!-- header section -->
+    <header class="container__header header">
+      <!-- navigaton bar with search and Login -->
+      <nav class="header__nav">
+        <!-- left nav bar -->
+        <div class="header__nav-left">
+          <figure class="header__nav-figure figure">
+            <img
+              src="images/flipkart-explore-plus.png"
+              alt=" Flipkart Explore Plus Logo"
+              class="img"
+            />
+          </figure>
+
+          <form
+            role="search"
+            class="header__search"
+            action="/"
+            method="get"
+          >
+            <label for="search-input" class="visually-hidden">Search</label>
+
+            <input
+              type="search"
+              id="search-input"
+              name="q"
+              placeholder="Search"
+              aria-label="Search site"
+            />
+
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            </button>
+          </form>
+        </div>
+        <!-- right nav bar -->
+        <div class="header__nav-right">
+          <button class="btn secondary-btn">Login</button>
+          <ul class="header__list">
+            <li><a href="#">More</a></li>
+            <li class="list__item">
+              <a href="#"><i class="fa-solid fa-cart-arrow-down"></i> Cart</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+
+      <!-- categorybar -->
+      <div class="header__categories">
+        <ul class="categories__container">
+          <li>
+            <a href="#" class="category">
+              <figure class="category__figure">
+                <img
+                  src="images/categories/gift.svg"
+                  alt="Top Offers"
+                  class="img"
+                />
+              </figure>
+              <p>Top Offers</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="category">
+              <figure class="category__figure">
+                <img
+                  src="images/categories/grocery.svg"
+                  alt="Grocery"
+                  class="img"
+                />
+              </figure>
+              <p>Grocery</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="category">
+              <figure class="category__figure">
+                <img
+                  src="images/categories/mobiles.svg"
+                  alt="Mobile"
+                  class="img"
+                />
+              </figure>
+            </a>
+            <p>Mobiles</p>
+          </li>
+          <li>
+            <a href="#" class="category">
+              <figure class="category__figure">
+                <img
+                  src="images/categories/appliances.svg"
+                  alt="Fashion"
+                  class="img"
+                />
+              </figure>
+              <div class="category__name">
+                <p>Fashion</p>
+                <figure class="category__figure--small">
+                  <i class="fa-solid fa-angle-down"></i>
+                </figure>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="category">
+              <figure class="category__figure">
+                <img
+                  src="images/categories/electronics.svg"
+                  alt="Electronics"
+                  class="img"
+                />
+              </figure>
+              <div class="category__name">
+                <p>Electronics</p>
+                <figure class="category__figure--small">
+                  <i class="fa-solid fa-angle-down"></i>
+                </figure>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="category">
+              <figure class="category__figure">
+                <img src="images/categories/home.svg" alt="Home" class="img" />
+              </figure>
+              <div class="category__name">
+                <p>Home</p>
+                <figure class="category__figure--small">
+                  <i class="fa-solid fa-angle-down"></i>
+                </figure>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="category">
+              <figure class="category__figure">
+                <img
+                  src="images/categories/appliances.svg"
+                  alt="Appliances"
+                  class="img"
+                />
+              </figure>
+              <div class="category__name">
+                <p>Appliances</p>
+                <figure class="category__figure--small">
+                  <i class="fa-solid fa-angle-down"></i>
+                </figure>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="category">
+              <figure class="category__figure">
+                <img
+                  src="images/categories/travel.svg"
+                  alt="Travel"
+                  class="img"
+                />
+              </figure>
+              <p>Travel</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="category">
+              <figure class="category__figure">
+                <img
+                  src="images/categories/beauty-toys.svg"
+                  alt="Mobile"
+                  class="img"
+                />
+              </figure>
+              <div class="category__name">
+                <p>Beauty,Toys & More</p>
+                <figure class="category__figure--small">
+                  <i class="fa-solid fa-angle-down"></i>
+                </figure>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- main section -->
+    <div class="container__main">
+      <main class="main">
+        <!-- main -top section with banner and category-items -->
+        <div class="main__top">
+          <div class="main__top-deals">
+            <!-- next icon -->
+            <span class="item__scroll--next">
+              <i class="fa-solid fa-angle-right"></i>
+            </span>
+            <!-- category heading -->
+            <div class="category__heading">
+              <div class="heading__left">
+                <h3>Deal of the Day</h3>
+                <div class="heading__left-timer">
+                  <i class="fa-regular fa-clock"></i>
+                  <p>22:007:36 Left</p>
+                </div>
+              </div>
+
+              <button class="btn primary-btn">View</button>
+            </div>
+            <!-- category items list -->
+            <ul class="category__items">
+              <li class="category__item">
+                <a href="#">
+                  <figure class="item">
+                    <img
+                      src="images/mobile.png"
+                      alt="Mobile Phone"
+                      class="img"
+                    />
+                  </figure>
+                  <div class="item__detail">
+                    <h5>Watch</h5>
+                    <p>Upto 80% Discount</p>
+                    <p>Fashion</p>
+                  </div>
+                </a>
+              </li>
+              <li class="category__item">
+                <a href="#">
+                  <figure class="item">
+                    <img
+                      src="images/mobile.png"
+                      alt="Mobile Phone"
+                      class="img"
+                    />
+                  </figure>
+                  <div class="item__detail">
+                    <h5>Watch</h5>
+                    <p>Upto 80% Discount</p>
+                    <p>Fashion</p>
+                  </div>
+                </a>
+              </li>
+              <li class="category__item">
+                <a href="#">
+                  <figure class="item">
+                    <img
+                      src="images/mobile.png"
+                      alt="Mobile Phone"
+                      class="img"
+                    />
+                  </figure>
+                  <div class="item__detail">
+                    <h5>Watch</h5>
+                    <p>Upto 80% Discount</p>
+                    <p>Fashion</p>
+                  </div>
+                </a>
+              </li>
+              <li class="category__item">
+                <a href="#">
+                  <figure class="item">
+                    <img
+                      src="images/mobile.png"
+                      alt="Mobile Phone"
+                      class="img"
+                    />
+                  </figure>
+                  <div class="item__detail">
+                    <h5>Watch</h5>
+                    <p>Upto 80% Discount</p>
+                    <p>Fashion</p>
+                  </div>
+                </a>
+              </li>
+              <li class="category__item">
+                <a href="#">
+                  <figure class="item">
+                    <img
+                      src="images/mobile.png"
+                      alt="Mobile Phone"
+                      class="img"
+                    />
+                  </figure>
+                  <div class="item__detail">
+                    <h5>Watch</h5>
+                    <p>Upto 80% Discount</p>
+                    <p>Fashion</p>
+                  </div>
+                </a>
+              </li>
+              <li class="category__item">
+                <a href="#">
+                  <figure class="item">
+                    <img
+                      src="images/mobile.png"
+                      alt="Mobile Phone"
+                      class="img"
+                    />
+                  </figure>
+                  <div class="item__detail">
+                    <h5>Watch</h5>
+                    <p>Upto 80% Discount</p>
+                    <p>Fashion</p>
+                  </div>
+                </a>
+              </li>
+              <li class="category__item">
+                <a href="#">
+                  <figure class="item">
+                    <img
+                      src="images/mobile.png"
+                      alt="Mobile Phone"
+                      class="img"
+                    />
+                  </figure>
+                  <div class="item__detail">
+                    <h5>Watch</h5>
+                    <p>Upto 80% Discount</p>
+                    <p>Fashion</p>
+                  </div>
+                </a>
+              </li>
+              <li class="category__item">
+                <a href="#">
+                  <figure class="item">
+                    <img
+                      src="images/mobile.png"
+                      alt="Mobile Phone"
+                      class="img"
+                    />
+                  </figure>
+                  <div class="item__detail">
+                    <h5>Watch</h5>
+                    <p>Upto 80% Discount</p>
+                    <p>Fashion</p>
+                  </div>
+                </a>
+              </li>
+              <li class="category__item">
+                <a href="#">
+                  <figure class="item">
+                    <img
+                      src="images/mobile.png"
+                      alt="Mobile Phone"
+                      class="img"
+                    />
+                  </figure>
+                  <div class="item__detail">
+                    <h5>Watch</h5>
+                    <p>Upto 80% Discount</p>
+                    <p>Fashion</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- promotion section having banner -->
+          <div class="main__promotion">
+            <figure class="banner" tabindex="0">
+              <img src="images/banner.jpg" alt="" class="img" />
+            </figure>
+          </div>
+        </div>
+
+        <!-- main-bottom section having cateory items -->
+        <div class="main__bottom">
+          <div class="main__bottom-deals">
+            <!-- next icon -->
+            <span class="item__scroll--next">
+              <i class="fa-solid fa-angle-right"></i>
+            </span>
+            <div class="category__heading">
+              <h3>Deal of the Day</h3>
+              <button class="btn primary-btn">View</button>
+            </div>
+            <div class="category__items">
+              <ul class="category__items">
+                <li class="category__item">
+                  <a href="#">
+                    <figure class="item">
+                      <img
+                        src="images/mobile.png"
+                        alt="Mobile Phone"
+                        class="img"
+                      />
+                    </figure>
+                    <div class="item__detail">
+                      <h5>Watch</h5>
+                      <p>Upto 80% Discount</p>
+                      <p>Fashion</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="category__item">
+                  <a href="#">
+                    <figure class="item">
+                      <img
+                        src="images/mobile.png"
+                        alt="Mobile Phone"
+                        class="img"
+                      />
+                    </figure>
+                    <div class="item__detail">
+                      <h5>Watch</h5>
+                      <p>Upto 80% Discount</p>
+                      <p>Fashion</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="category__item">
+                  <a href="#">
+                    <figure class="item">
+                      <img
+                        src="images/mobile.png"
+                        alt="Mobile Phone"
+                        class="img"
+                      />
+                    </figure>
+                    <div class="item__detail">
+                      <h5>Watch</h5>
+                      <p>Upto 80% Discount</p>
+                      <p>Fashion</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="category__item">
+                  <a href="#">
+                    <figure class="item">
+                      <img
+                        src="images/mobile.png"
+                        alt="Mobile Phone"
+                        class="img"
+                      />
+                    </figure>
+                    <div class="item__detail">
+                      <h5>Watch</h5>
+                      <p>Upto 80% Discount</p>
+                      <p>Fashion</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="category__item">
+                  <a href="#">
+                    <figure class="item">
+                      <img
+                        src="images/mobile.png"
+                        alt="Mobile Phone"
+                        class="img"
+                      />
+                    </figure>
+                    <div class="item__detail">
+                      <h5>Watch</h5>
+                      <p>Upto 80% Discount</p>
+                      <p>Fashion</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="category__item">
+                  <a href="#">
+                    <figure class="item">
+                      <img
+                        src="images/mobile.png"
+                        alt="Mobile Phone"
+                        class="img"
+                      />
+                    </figure>
+                    <div class="item__detail">
+                      <h5>Watch</h5>
+                      <p>Upto 80% Discount</p>
+                      <p>Fashion</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="category__item">
+                  <a href="#">
+                    <figure class="item">
+                      <img
+                        src="images/mobile.png"
+                        alt="Mobile Phone"
+                        class="img"
+                      />
+                    </figure>
+                    <div class="item__detail">
+                      <h5>Watch</h5>
+                      <p>Upto 80% Discount</p>
+                      <p>Fashion</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="category__item">
+                  <a href="#">
+                    <figure class="item">
+                      <img
+                        src="images/mobile.png"
+                        alt="Mobile Phone"
+                        class="img"
+                      />
+                    </figure>
+                    <div class="item__detail">
+                      <h5>Watch</h5>
+                      <p>Upto 80% Discount</p>
+                      <p>Fashion</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="category__item">
+                  <a href="#">
+                    <figure class="item">
+                      <img
+                        src="images/mobile.png"
+                        alt="Mobile Phone"
+                        class="img"
+                      />
+                    </figure>
+                    <div class="item__detail">
+                      <h5>Watch</h5>
+                      <p>Upto 80% Discount</p>
+                      <p>Fashion</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- main-bottom section having cateory items -->
+        <div class="main__bottom">
+          <div class="main__bottom-deals">
+            <!-- next icon -->
+            <span class="item__scroll--next">
+              <i class="fa-solid fa-angle-right"></i>
+            </span>
+            <div class="category__heading">
+              <h3>Deal of the Day</h3>
+              <button class="btn primary-btn">View</button>
+            </div>
+            <div class="category__items">
+              <ul class="category__items">
+                <li class="category__item">
+                  <a href="#">
+                    <figure class="item">
+                      <img
+                        src="images/mobile.png"
+                        alt="Mobile Phone"
+                        class="img"
+                      />
+                    </figure>
+                    <div class="item__detail">
+                      <h5>Watch</h5>
+                      <p>Upto 80% Discount</p>
+                      <p>Fashion</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="category__item">
+                  <a href="#">
+                    <figure class="item">
+                      <img
+                        src="images/mobile.png"
+                        alt="Mobile Phone"
+                        class="img"
+                      />
+                    </figure>
+                    <div class="item__detail">
+                      <h5>Watch</h5>
+                      <p>Upto 80% Discount</p>
+                      <p>Fashion</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="category__item">
+                  <a href="#">
+                    <figure class="item">
+                      <img
+                        src="images/mobile.png"
+                        alt="Mobile Phone"
+                        class="img"
+                      />
+                    </figure>
+                    <div class="item__detail">
+                      <h5>Watch</h5>
+                      <p>Upto 80% Discount</p>
+                      <p>Fashion</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="category__item">
+                  <a href="#">
+                    <figure class="item">
+                      <img
+                        src="images/mobile.png"
+                        alt="Mobile Phone"
+                        class="img"
+                      />
+                    </figure>
+                    <div class="item__detail">
+                      <h5>Watch</h5>
+                      <p>Upto 80% Discount</p>
+                      <p>Fashion</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="category__item">
+                  <a href="#">
+                    <figure class="item">
+                      <img
+                        src="images/mobile.png"
+                        alt="Mobile Phone"
+                        class="img"
+                      />
+                    </figure>
+                    <div class="item__detail">
+                      <h5>Watch</h5>
+                      <p>Upto 80% Discount</p>
+                      <p>Fashion</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="category__item">
+                  <a href="#">
+                    <figure class="item">
+                      <img
+                        src="images/mobile.png"
+                        alt="Mobile Phone"
+                        class="img"
+                      />
+                    </figure>
+                    <div class="item__detail">
+                      <h5>Watch</h5>
+                      <p>Upto 80% Discount</p>
+                      <p>Fashion</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="category__item">
+                  <a href="#">
+                    <figure class="item">
+                      <img
+                        src="images/mobile.png"
+                        alt="Mobile Phone"
+                        class="img"
+                      />
+                    </figure>
+                    <div class="item__detail">
+                      <h5>Watch</h5>
+                      <p>Upto 80% Discount</p>
+                      <p>Fashion</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="category__item">
+                  <a href="#">
+                    <figure class="item">
+                      <img
+                        src="images/mobile.png"
+                        alt="Mobile Phone"
+                        class="img"
+                      />
+                    </figure>
+                    <div class="item__detail">
+                      <h5>Watch</h5>
+                      <p>Upto 80% Discount</p>
+                      <p>Fashion</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="category__item">
+                  <a href="#">
+                    <figure class="item">
+                      <img
+                        src="images/mobile.png"
+                        alt="Mobile Phone"
+                        class="img"
+                      />
+                    </figure>
+                    <div class="item__detail">
+                      <h5>Watch</h5>
+                      <p>Upto 80% Discount</p>
+                      <p>Fashion</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
