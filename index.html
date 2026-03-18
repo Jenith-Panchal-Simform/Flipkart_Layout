@@ -39,184 +39,194 @@
 
   <!-- main container -->
   <body class="container">
+    <!-- header section -->
+    <header class="container__header header">
+      <!-- navigaton bar with search and Login -->
+      <nav class="header__nav">
+        <!-- left nav bar -->
+        <div class="header__nav-left">
+          <figure class="header__nav-figure figure">
+            <img
+              src="images/flipkart-explore-plus.png"
+              alt=" Flipkart Explore Plus Logo"
+              class="img"
+            />
+          </figure>
+          <form
+            role="search"
+            class="header__search"
+            action="/"
+            method="get"
+          >
+            <label for="search-input" class="visually-hidden">Search</label>
 
-      <!-- header section -->
-      <header class="container__header header">
-        <!-- navigaton bar with search and Login -->
-        <nav class="header__nav">
-          <!-- left nav bar -->
-          <div class="header__nav-left">
-            <figure class="header__nav-figure figure">
-              <img
-                src="images/flipkart-explore-plus.png"
-                alt=" Flipkart Explore Plus Logo"
-                class="img"
-              />
-            </figure>
-            <search class="header__search">
-              <input type="text" placeholder="Search" />
-              <button><i class="fa-solid fa-magnifying-glass"></i></button>
-            </search>
-            
-          </div>
-          <!-- right nav bar -->
-          <div class="header__nav-right">
-            <button class="btn secondary-btn">Login</button>
-            <ul class="header__list">
-              <li><a href="#">More</a></li>
-              <li class="list__item">
-                <i class="fa-solid fa-cart-arrow-down"></i> <a href="#">Cart</a>
-              </li>
-            </ul>
-          </div>
-          <div class="header__hamburger">
-            <i class="fa-solid fa-bars"></i>
-          </div>
-        </nav>
+            <input
+              type="search"
+              id="search-input"
+              name="q"
+              placeholder="Search"
+              aria-label="Search site"
+            />
 
-        <!-- categorybar -->
-        <div class="header__categories">
-          <ul class="categories__container">
-            <li>
-              <a href="#" class="category">
-                <figure class="category__figure">
-                  <img
-                    src="images/categories/gift.svg"
-                    alt="Top Offers"
-                    class="img"
-                  />
-                </figure>
-                <p>Top Offers</p>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="category">
-                <figure class="category__figure">
-                  <img
-                    src="images/categories/grocery.svg"
-                    alt="Grocery"
-                    class="img"
-                  />
-                </figure>
-                <p>Grocery</p>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="category">
-                <figure class="category__figure">
-                  <img
-                    src="images/categories/mobiles.svg"
-                    alt="Mobile"
-                    class="img"
-                  />
-                </figure>
-                <p>Mobiles</p>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="category">
-                <figure class="category__figure">
-                  <img
-                    src="images/categories/appliances.svg"
-                    alt="Fashion"
-                    class="img"
-                  />
-                </figure>
-                <div class="category__name">
-                  <p>Fashion</p>
-                  <figure class="category__figure--small">
-                    <i class="fa-solid fa-angle-down"></i>
-                  </figure>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="category">
-                <figure class="category__figure">
-                  <img
-                    src="images/categories/electronics.svg"
-                    alt="Electronics"
-                    class="img"
-                  />
-                </figure>
-                <div class="category__name">
-                  <p>Electronics</p>
-                  <figure class="category__figure--small">
-                    <i class="fa-solid fa-angle-down"></i>
-                  </figure>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="category">
-                <figure class="category__figure">
-                  <img
-                    src="images/categories/home.svg"
-                    alt="Home"
-                    class="img"
-                  />
-                </figure>
-                <div class="category__name">
-                  <p>Home</p>
-                  <figure class="category__figure--small">
-                    <i class="fa-solid fa-angle-down"></i>
-                  </figure>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="category">
-                <figure class="category__figure">
-                  <img
-                    src="images/categories/appliances.svg"
-                    alt="Appliances"
-                    class="img"
-                  />
-                </figure>
-                <div class="category__name">
-                  <p>Appliances</p>
-                  <figure class="category__figure--small">
-                    <i class="fa-solid fa-angle-down"></i>
-                  </figure>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="category">
-                <figure class="category__figure">
-                  <img
-                    src="images/categories/travel.svg"
-                    alt="Travel"
-                    class="img"
-                  />
-                </figure>
-                <p>Travel</p>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="category">
-                <figure class="category__figure">
-                  <img
-                    src="images/categories/beauty-toys.svg"
-                    alt="Mobile"
-                    class="img"
-                  />
-                </figure>
-                <div class="category__name">
-                  <p>Beauty,Toys & More</p>
-                  <figure class="category__figure--small">
-                    <i class="fa-solid fa-angle-down"></i>
-                  </figure>
-                </div>
-              </a>
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            </button>
+          </form>
+        </div>
+        <!-- right nav bar -->
+        <div class="header__nav-right">
+          <button class="btn secondary-btn">Login</button>
+          <ul class="header__list">
+            <li><a href="#">More</a></li>
+            <li class="list__item">
+              <i class="fa-solid fa-cart-arrow-down"></i> <a href="#">Cart</a>
             </li>
           </ul>
         </div>
-      </header>
+        <div class="header__hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
 
-      <!-- main section -->
-       <div class="container__main">
-      <main class=" main">
+      <!-- categorybar -->
+      <div class="header__categories">
+        <ul class="categories__container">
+          <li>
+            <a href="#" class="category">
+              <figure class="category__figure">
+                <img
+                  src="images/categories/gift.svg"
+                  alt="Top Offers"
+                  class="img"
+                />
+              </figure>
+              <p>Top Offers</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="category">
+              <figure class="category__figure">
+                <img
+                  src="images/categories/grocery.svg"
+                  alt="Grocery"
+                  class="img"
+                />
+              </figure>
+              <p>Grocery</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="category">
+              <figure class="category__figure">
+                <img
+                  src="images/categories/mobiles.svg"
+                  alt="Mobile"
+                  class="img"
+                />
+              </figure>
+              <p>Mobiles</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="category">
+              <figure class="category__figure">
+                <img
+                  src="images/categories/appliances.svg"
+                  alt="Fashion"
+                  class="img"
+                />
+              </figure>
+              <div class="category__name">
+                <p>Fashion</p>
+                <figure class="category__figure--small">
+                  <i class="fa-solid fa-angle-down"></i>
+                </figure>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="category">
+              <figure class="category__figure">
+                <img
+                  src="images/categories/electronics.svg"
+                  alt="Electronics"
+                  class="img"
+                />
+              </figure>
+              <div class="category__name">
+                <p>Electronics</p>
+                <figure class="category__figure--small">
+                  <i class="fa-solid fa-angle-down"></i>
+                </figure>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="category">
+              <figure class="category__figure">
+                <img src="images/categories/home.svg" alt="Home" class="img" />
+              </figure>
+              <div class="category__name">
+                <p>Home</p>
+                <figure class="category__figure--small">
+                  <i class="fa-solid fa-angle-down"></i>
+                </figure>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="category">
+              <figure class="category__figure">
+                <img
+                  src="images/categories/appliances.svg"
+                  alt="Appliances"
+                  class="img"
+                />
+              </figure>
+              <div class="category__name">
+                <p>Appliances</p>
+                <figure class="category__figure--small">
+                  <i class="fa-solid fa-angle-down"></i>
+                </figure>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="category">
+              <figure class="category__figure">
+                <img
+                  src="images/categories/travel.svg"
+                  alt="Travel"
+                  class="img"
+                />
+              </figure>
+              <p>Travel</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="category">
+              <figure class="category__figure">
+                <img
+                  src="images/categories/beauty-toys.svg"
+                  alt="Mobile"
+                  class="img"
+                />
+              </figure>
+              <div class="category__name">
+                <p>Beauty,Toys & More</p>
+                <figure class="category__figure--small">
+                  <i class="fa-solid fa-angle-down"></i>
+                </figure>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- main section -->
+    <div class="container__main">
+      <main class="main">
         <!-- main -top section with banner and category-items -->
         <div class="main__top">
           <div class="main__top-deals">
@@ -716,6 +726,6 @@
           </div>
         </div>
       </main>
-      </div>
+    </div>
   </body>
 </html>
