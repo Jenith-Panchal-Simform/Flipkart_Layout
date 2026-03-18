@@ -139,7 +139,7 @@ a {
         font-size: var(--font-size-large);
         color: var(--color-white);
       }
-      .list__item{
+      .list__item a{
         display:flex ;
       }
     }
